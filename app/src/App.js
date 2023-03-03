@@ -1,7 +1,7 @@
-import { ethers } from 'ethers';
-import { useEffect, useState } from 'react';
-import deploy from './deploy';
-import Escrow from './Escrow';
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+import deploy from "./deploy";
+import Escrow from "./Escrow";
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     async function getAccounts() {
-      const accounts = await provider.send('eth_requestAccounts', []);
+      const accounts = await provider.send("eth_requestAccounts", []);
 
       setAccount(accounts[0]);
       setSigner(provider.getSigner());
@@ -27,26 +27,25 @@ function App() {
   }, [account]);
 
   async function newContract() {
-    const beneficiary = document.getElementById('beneficiary').value;
-    const arbiter = document.getElementById('arbiter').value;
-    const value = ethers.BigNumber.from(document.getElementById('wei').value);
+    const beneficiary = document.getElementById("beneficiary").value;
+    const arbiter = document.getElementById("arbiter").value;
+    const value = ethers.utils.parseUnits(document.getElementById("wei").value);
     const escrowContract = await deploy(signer, arbiter, beneficiary, value);
-
-
+    console.log(escrowContract.address);
     const escrow = {
       address: escrowContract.address,
       arbiter,
       beneficiary,
       value: value.toString(),
       handleApprove: async () => {
-        escrowContract.on('Approved', () => {
+        escrowContract.on("Approved", () => {
           document.getElementById(escrowContract.address).className =
-            'complete';
+            "complete";
           document.getElementById(escrowContract.address).innerText =
             "✓ It's been approved!";
         });
-
         await approve(escrowContract, signer);
+        console.log(signer);
       },
     };
 
@@ -68,7 +67,7 @@ function App() {
         </label>
 
         <label>
-          Deposit Amount (in Wei)
+          Deposit Amount (in eth)
           <input type="text" id="wei" />
         </label>
 
