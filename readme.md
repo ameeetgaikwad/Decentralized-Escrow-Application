@@ -1,7 +1,13 @@
 # Decentralized Escrow Application
 
-This is an Escrow Dapp built with [Hardhat](https://hardhat.org/).
+This is a decentralized escros applicatoin, which facilitates the buying and selling of items with the help of an arbiter. Here you need three addresses:
+1. Beneficiary
+2. Depositer
+3. Arbiter
 
+The beneficiary is the person who is going to sell an item and get moeny for it. Depositer is the person who wants the item and is paying the beneficiary. Arbiter is the third person who is carrying out this transaction without any bias and malpractice.
+
+The depositer deposits money in the contract. When the beneficiary gives the depositor the item he wants and the item is in good condition. Then the arbiter transfers money from the contract to the beneficiary. Only the arbiter can transfer the money. Nor the depositer or the beneficiary can transfer the moeny.
 ## Project Layout
 
 There are three top-level folders:
