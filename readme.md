@@ -1,6 +1,6 @@
 # Decentralized Escrow Application
 
-This is a decentralized escros applicatoin, which facilitates the buying and selling of items with the help of an arbiter. Here you need three addresses:
+This is a decentralized escrow applicatoin, which facilitates the buying and selling of items with the help of an arbiter. Here you need three addresses:
 1. Beneficiary
 2. Depositer
 3. Arbiter
