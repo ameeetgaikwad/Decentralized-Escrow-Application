@@ -1,5 +1,5 @@
 # Decentralized Escrow Application
-### Disclaimer
+## Disclaimer
 
 The frontend of this website is still in progress. This is just the basic frontend to showcase the backend. Also I'm planning to add more features in the backend as well.
 
