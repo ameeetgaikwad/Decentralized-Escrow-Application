@@ -1,15 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
   background-color: #eee;
   display: flex;
-  font-family: 'Muli', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.contract, .existing-contracts {
+.contract,
+.existing-contracts {
   margin: 20px;
   display: inline-block;
   padding: 40px;
   border: 1px solid #ddd;
   background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  left: 30%;
+  top: 10%;
+  color: black;
 }
 
 h1 {
@@ -29,9 +37,10 @@ label {
 input[type="text"] {
   padding: 6px;
   font-size: 18px;
+  border: 1px solid black;
 }
 
-.button {
+/* .button {
   background-color: #f58427;
   color: white;
   text-align: center;
@@ -42,7 +51,7 @@ input[type="text"] {
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-}
+} */
 
 .existing-contract ul {
   padding: 10px;

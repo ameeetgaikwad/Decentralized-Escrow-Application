@@ -6,12 +6,12 @@ module.exports = {
   paths: {
     artifacts: "./app/src/artifacts",
   },
-  defaultNetwork: "",
+  defaultNetwork: "goerli",
   networks: {
-    hardhat: {
-    },
+    hardhat: {},
     goerli: {
       url: process.env.GOERLI_URL,
-      accounts: [process.env.PRIVATE_KEY]
-    }
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },
 };
