@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Decentralized-Escrow-Application/static/css/main.ecb1941b.css",
-    "main.js": "/Decentralized-Escrow-Application/static/js/main.d91e9807.js",
+    "main.js": "/Decentralized-Escrow-Application/static/js/main.67306103.js",
     "static/js/787.c1112931.chunk.js": "/Decentralized-Escrow-Application/static/js/787.c1112931.chunk.js",
     "index.html": "/Decentralized-Escrow-Application/index.html",
     "main.ecb1941b.css.map": "/Decentralized-Escrow-Application/static/css/main.ecb1941b.css.map",
-    "main.d91e9807.js.map": "/Decentralized-Escrow-Application/static/js/main.d91e9807.js.map",
+    "main.67306103.js.map": "/Decentralized-Escrow-Application/static/js/main.67306103.js.map",
     "787.c1112931.chunk.js.map": "/Decentralized-Escrow-Application/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecb1941b.css",
-    "static/js/main.d91e9807.js"
+    "static/js/main.67306103.js"
   ]
 }
