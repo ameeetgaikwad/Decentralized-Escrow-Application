@@ -34,7 +34,6 @@ export default function Escrow({
           margin={"1rem 5rem"}
           cursor={"pointer"}
           _active={{
-            bg: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
             transform: "scale(0.9)",
           }}
           color={"white"}
